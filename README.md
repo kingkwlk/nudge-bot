@@ -11,6 +11,17 @@ do based on available time, energy, and category.
 - `/activity-list` slash command
 - Owner-only access
 
+## Recommendations
+
+Use `/nudge time:30 energy:medium category:any` to get a suggestion.
+Category is optional and supports custom categories from your saved activities.
+Energy is a maximum: medium also allows low-energy activities.
+
+The **Another** button selects a different matching activity (older suggestions
+can return later). It is disabled when only one activity fits. Buttons expire
+after five minutes; run `/nudge` again to start a fresh recommendation.
+Suggestions are private to you and do not yet record completion history.
+
 ## Local setup
 
 1. Create and activate a Python virtual environment.
